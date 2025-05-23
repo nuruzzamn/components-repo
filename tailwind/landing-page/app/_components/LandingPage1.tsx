@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Phone, ShoppingCart, Star, ChevronRight, Battery, Wifi, Shield, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { ShoppingCart, Star, ChevronRight, Battery, Wifi, Shield, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 export default function LandingPage1() {
   return (
@@ -33,12 +33,15 @@ export default function LandingPage1() {
                 <a href="#" className="hover:text-blue-600 transition-colors">Reviews</a>
               </div>
               <div className="flex items-center gap-4">
-                <button className="relative group p-2">
+                <button className="relative group p-2 cursor-pointer rounded-full hover:bg-blue-50 transition-all duration-300">
                   <span className="absolute -top-1 -right-1 w-5 h-5 bg-blue-600 text-white text-xs rounded-full flex items-center justify-center">2</span>
                   <ShoppingCart className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
-                  <div className="absolute inset-0 bg-blue-100 rounded-full scale-110 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-blue-100 rounded-full scale-110 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
                 </button>
-                <button className="hidden sm:flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
+                <button className="hidden sm:flex items-center gap-2 border-2 border-blue-600 text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-all duration-300 cursor-pointer">
+                  <span>Login</span>
+                </button>
+                <button className="hidden sm:flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
                   <span>Contact Us</span>
                 </button>
               </div>

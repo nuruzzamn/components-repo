@@ -1,8 +1,22 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   images: {
-    domains: ['d10rvdv6rxomuk.cloudfront.net'],
-  },
-}
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'd10rvdv6rxomuk.cloudfront.net'
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'randomuser.me'
+      }
+    ]
+  }
+};
 
-module.exports = nextConfig
+export default nextConfig;
